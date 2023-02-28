@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de moneda</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Menu</h1>
-    <p>
-        Seleccione una opcion de convercion
-    </p>
-    <div>
-        <input type="radio" name="" id="imoneda">
+    <header>
+        <h1>Conversor de Monedas</h1>
+    </header>
+
+    <form id="formulario">
+        <p>
+            Nombre: <input type="text" name="" id="nombre">
+        </p>
+        <p>
+            Edad: <input type="text" name="" id="edad">
+        </p>
+        <p>
+            Monto: <input type="number" name="" id="monto">
+        </p>
+
+        <p>
+            Seleccione una opcion de convercion
+        </p>
+
+        <input type="radio" name="conver" id="imoneda" checked>
         <label for="imoneda">Conversor de Moneda</label>
-        <br>
-        <input type="radio" name="" id="itemperatura">
+        <select id="mone">
+            <option id="dol">dolar</option>
+            <option id="sol">soles</option>
+            
+        </select><br>
+
+        <input type="radio" name="conver" id="itemperatura">
         <label for="itemperatura">Conversor de Temperatura</label>
-    </div>
+        <select id="tem">
+            <option id="centi">°C</option>
+            <option id="fare">°F</option>
+        </select>
+
+        <p><input type="button" value="convertir" id="convertir"></p>
+
+        <div>
+            Respuesta:
+        </div>
+    </form>
+        
+    
+
+    <script src="index.js"></script>
 </body>
 </html>
