@@ -17,10 +17,10 @@
             Nombre: <input type="text" name="" id="nombre">
         </p>
         <p>
-            Edad: <input type="text" name="" id="edad">
+            Monto: <input type="number" name="" id="monto" placeholder=" dinero en reales">
         </p>
         <p>
-            Monto: <input type="number" name="" id="monto">
+            Temperatura: <input type="number" name="" id="temperatura" placeholder="grados: °C y °F">
         </p>
 
         <p>
@@ -29,9 +29,9 @@
 
         <input type="radio" name="conver" id="imoneda" checked>
         <label for="imoneda">Conversor de Moneda</label>
-        <select id="mone">
-            <option id="dol">dolar</option>
-            <option id="sol">soles</option>
+        <select id="moneda">
+            <option value="dolar">dolar</option>
+            <option value="soles">soles</option>
             
         </select><br>
 
@@ -44,7 +44,7 @@
 
         <p><input type="button" value="convertir" id="convertir"></p>
 
-        <div>
+        <div id="res">
             Respuesta:
         </div>
     </form>
