@@ -14,10 +14,10 @@ function crear(){
         var lenguajes = seleccion.options[seleccion.selectedIndex]
         var lengua = lenguajes.value
         if (lengua == 'soles'){
-            res.innerHTML = `tipo de cambio:${dinero*0.73} soles`
+            res.innerHTML = `tipo de cambio: s/${dinero*0.73}`
         }    
         if (lengua == "dolar"){
-            res.innerHTML = `tipo de cambio: ${dinero*0.19} dolar`
+            res.innerHTML = `tipo de cambio: $${dinero*0.19}`
         } 
            
         
