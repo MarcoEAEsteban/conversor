@@ -13,34 +13,34 @@
     </header>
 
     <form id="formulario">
-        <p>
-            Nombre: <input type="text" name="" id="nombre">
-        </p>
-        <p>
-            Monto: <input type="number" name="" id="monto" placeholder=" dinero en reales">
-        </p>
-        <p>
-            Temperatura: <input type="number" name="" id="temperatura" placeholder="grados: °C y °F">
-        </p>
+        <div class="datos">
+            <p>
+                Nombre: <input type="text" name="" id="nombre" placeholder="Nombre" required>
+            </p>
+            <p>
+                Monto: <input type="number" name="" id="monto" placeholder="Dinero en reales" required>
+            </p>
+            <p>
+                Temperatura: <input type="number" name="" id="temperatura" placeholder="Grados: °C y °F" required>
+            </p>
+        </div>
 
-        <p>
+        <h2>
             Seleccione una opcion de convercion
-        </p>
+        </h2>
 
-        <input type="radio" name="conver" id="imoneda" checked>
-        <label for="imoneda">Conversor de Moneda</label>
-        <select id="moneda">
-            <option value="dolar">dolar</option>
-            <option value="soles">soles</option>
-            
-        </select><br>
-
-        <input type="radio" name="conver" id="itemperatura">
-        <label for="itemperatura">Conversor de Temperatura</label>
-        <select id="tem">
-            <option id="centi">°C</option>
-            <option id="fare">°F</option>
-        </select>
+        <div class="opcion">
+            <p class="">
+                <input type="radio" name="conver" id="imoneda" checked>
+                <label for="imoneda">Conversor de Moneda</label>
+                <select id="moneda"></select>
+            </p>
+            <p>
+                <input type="radio" name="conver" id="itemperatura">
+                <label for="itemperatura">Conversor de Temperatura</label>
+                <select id="tem"></select>
+            </p>
+        </div>
 
         <p><input type="button" value="convertir" id="convertir"></p>
 

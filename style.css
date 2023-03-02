@@ -1,0 +1,59 @@
+body{
+    background-color: rgba(0, 0, 0, 0.87);
+    color: azure;
+    font: normal arial;
+}
+ header{
+    text-align: center;
+ }
+  #formulario{
+    background-color: rgba(165, 42, 42, 0.288);
+    border-radius: 30px;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    
+  }
+
+  .datos {
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .datos p{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 300px;
+    margin: 10px auto;
+  }
+
+  .opcion {
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .opcion p{
+    display: flex;
+    justify-content: space-between;
+   
+    justify-content: space-between;
+    width: 300px;
+    margin: 10px auto;
+  }
+
+  #convertir:hover{
+    color: brown;
+    cursor: pointer;
+
+  }
+  #moneda:hover{
+    color: brown;
+    cursor: pointer;
+  }
+  #tem:hover{
+    color: brown;
+    cursor: pointer;
+  }
